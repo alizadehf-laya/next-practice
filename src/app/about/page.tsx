@@ -2,6 +2,7 @@ import React, { Children } from "react"
 import { Metadata } from "next";
 import CounterP from "./CounterP/page";
 import ServerComp from "./serverComp/page";
+import { Contactus } from "./contactus/page";
 
 export const metadata: Metadata = {
     title: "About Page",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 function  about(  ){
     return(
         <>
+        <Contactus/>
         <CounterP>
             <ServerComp/>
         </CounterP>
